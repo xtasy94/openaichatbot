@@ -16,7 +16,7 @@ Next, you'll need to install the OpenAI package by running:
 pip install openai
 ```
 
-In order to use the GPT-3 model, you'll need to have an API key from OpenAI. You can get your API key by following the instructions [here](https://github.com/xtasy94/openaichatbot/blob/main/friendchatbot.py). Once you have your API key, place it in the designated spot in the code where it says "YOUR OPENAI API KEY".
+In order to use the GPT-3 model, you'll need to have an API key from OpenAI. You can get your API key by following the instructions [here](https://www.educative.io/answers/how-to-get-api-key-of-gpt-3). Once you have your API key, place it in the designated spot in the code where it says "YOUR OPENAI API KEY".
 
 Finally, you can run the Friend Chatbot by using this command:
 
