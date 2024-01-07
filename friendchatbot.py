@@ -1,22 +1,19 @@
 import openai
 
-
 openai.api_key = "YOUR OPENAI API"
-
-
 model_engine = "text-davinci-002"
 
 while True:
-    
-    message = input("You: ")
+    user_input = input("You: ")
 
-   
+    prompt = f"You: {user_input}\nFriend: "
+
     response = openai.Completion.create(
         engine=model_engine,
-        prompt=f"You: {message}\nFriend: ",
+        prompt=prompt,
         max_tokens=1024,
         temperature=0.5,
     )
 
-    
-    print("Friend:", response.choices[0].text)
+    friend_response = response.choices[0].text
+    print("Friend:", friend_response)
